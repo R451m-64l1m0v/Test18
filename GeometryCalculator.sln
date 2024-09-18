@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryCalculator", "GeometryCalculator\GeometryCalculator.csproj", "{6A552468-EED3-4499-BC38-ACEC4BA207D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometryCalculator", "GeometryCalculator\GeometryCalculator.csproj", "{6A552468-EED3-4499-BC38-ACEC4BA207D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryLibrary", "GeometryLibrary\GeometryLibrary.csproj", "{8D9B1C69-5CB0-47B0-97B8-071836160843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometryLibrary", "GeometryLibrary\GeometryLibrary.csproj", "{8D9B1C69-5CB0-47B0-97B8-071836160843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryCalculatorTests", "ShapeTests\GeometryCalculatorTests.csproj", "{BEB275BB-5002-4F6E-A322-1E5C6D652543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometryCalculatorTests", "ShapeTests\GeometryCalculatorTests.csproj", "{BEB275BB-5002-4F6E-A322-1E5C6D652543}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
