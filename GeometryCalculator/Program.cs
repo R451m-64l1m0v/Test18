@@ -12,7 +12,7 @@ do
         string input = Console.ReadLine();
         var radius = ValidatorInputData.ValidateAndParseToDouble(input);
 
-        CirculeService.Circule(radius);
+        CirculeService.CirculeExecute(radius);
 
         isValid = true; 
     }
@@ -41,7 +41,7 @@ do
 
         var triangle = new Triangle(sideA, sideB, sideC);
 
-        TriangleService.Triangle(triangle);
+        TriangleService.TriangleExecute(triangle);
 
         isValid = true;
     }

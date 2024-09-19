@@ -4,7 +4,7 @@ namespace GeometryCalculator.Workers
 {
     public static class CirculeService
     {
-        public static void Circule(double radius)
+        public static void CirculeExecute(double radius)
         {
             var circle = new Circle(radius);
             var circleArea = circle.CalculateArea();

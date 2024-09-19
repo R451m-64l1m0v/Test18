@@ -4,7 +4,7 @@ namespace GeometryCalculator.Workers
 {
     public static class TriangleService
     {
-        public static void Triangle(Triangle triangle)
+        public static void TriangleExecute(Triangle triangle)
         {            
             var triangleArea = triangle.CalculateArea();
             Console.WriteLine($"Площадь треугольника со сторонами {triangle.sideA}, {triangle.sideB}, {triangle.sideC}: {triangleArea}");
