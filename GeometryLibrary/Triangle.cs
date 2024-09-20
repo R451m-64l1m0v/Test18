@@ -41,7 +41,7 @@ namespace GeometryLibrary
         {
             try
             {
-                var epsilon = 0;
+                var epsilon = 0.0001;
                 var sides = new List<double> { sideA, sideB, sideC };
                 sides.Sort();
 
@@ -50,7 +50,7 @@ namespace GeometryLibrary
                 var sumSquaresLegs = squareLeg1 + squareLeg2;
                 var squareHypotenuse = Math.Pow(sides[2], 2);
                 
-                return Math.Abs(sumSquaresLegs - squareHypotenuse) == epsilon ? true : false;                
+                return Math.Abs(sumSquaresLegs - squareHypotenuse) < epsilon ? true : false;                
             }
             catch (Exception)
             {

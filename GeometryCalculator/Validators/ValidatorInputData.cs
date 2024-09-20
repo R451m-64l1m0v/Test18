@@ -1,20 +1,21 @@
-﻿namespace GeometryCalculator.Validators
+﻿using System.Globalization;
+
+namespace GeometryCalculator.Validators
 {
     public static class ValidatorInputData
     {
         public static double ValidateAndParseToDouble(string input)
         {
-            var epsilon = 0;
+            var epsilon = 0.0001;
             if (string.IsNullOrWhiteSpace(input))
                 throw new ArgumentException($"Ошибка: введено некорректное значение.");
 
-            var size = double.TryParse(input, out double value) ? value : 0;
+            var culture = CultureInfo.GetCultureInfo("ru-RU");
 
-            if (size < 0)
-                throw new ArgumentException("Размер не может быть отрицательным.");            
-
-            if (Math.Abs(size - 0) == epsilon)
-                throw new ArgumentException("Размер не может быть равен нулю.");
+            var size = double.TryParse(input, NumberStyles.Any, culture, out double value) ? value : 0;
+            
+            if (size < epsilon)
+                throw new ArgumentException("Размер не может быть равен нулю или отрицательным.");
 
             return size;
         }
