@@ -13,12 +13,9 @@ namespace GeometryCalculator.Validators
             var culture = CultureInfo.GetCultureInfo("ru-RU");
 
             var size = double.TryParse(input, NumberStyles.Any, culture, out double value) ? value : 0;
-
-            if (size < 0)
-                throw new ArgumentException("Размер не может быть отрицательным.");
-
+            
             if (size < epsilon)
-                throw new ArgumentException("Размер не может быть равен нулю.");
+                throw new ArgumentException("Размер не может быть равен нулю или отрицательным.");
 
             return size;
         }
